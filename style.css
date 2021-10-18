@@ -1,0 +1,132 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+p, h1, a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  height: 30px;
+}
+
+body {
+  background-image: url("img/background.png");
+  background-position: center;
+}
+body header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body header div svg {
+  height: 30px;
+  margin: 20px;
+}
+body header div svg line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+body footer > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+body footer > div div {
+  width: 50%;
+}
+body footer p {
+  text-align: right;
+  color: white;
+}
+body footer .copyright {
+  font-size: 10px;
+}
+
+.main {
+  width: 100%;
+}
+.main > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main > div h1 {
+  font-size: 15rem;
+}
+.main > div p {
+  text-align: right;
+}
+.main > div a {
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  color: white;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.main > div div {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
