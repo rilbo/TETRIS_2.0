@@ -82,26 +82,137 @@ body{
             color: white;
             backdrop-filter: blur(30px);
             background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            
         }
-        div{
+        > div{
             display: flex;
             justify-content: center;
             margin-top: 100px;
-        }
-
-        
-
-        
-            
-                
-                
-            
-            
+        }  
     }
-
-    
 }
 
+// JEU //
+
+.main{
+    .fond{
+
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        box-shadow:
+            0 0 20px #fff,
+            -20px 0 80px #f0f,
+            20px 0 80px #FCC8CB,
+            inset 0 0 50px #fff,
+            inset 50px 0 80px #f0f,
+            inset -50px 0 80px #FCC8CB,
+            inset 50px 0 300px #f0f,
+            inset -50px 0 300px #FCC8CB;
+        animation: pulsate 6s linear infinite;
+    }
+}
+
+@keyframes pulsate {
+    50% {
+      box-shadow:
+        0 0 20px #fff,
+        20px 0 80px #f0f,
+        -20px 0 80px #FCC8CB,
+        inset 0 0 50px #fff,
+        inset -50px 0 80px #f0f,
+        inset 50px 0 80px #FCC8CB,
+        inset -50px 0 300px #f0f,
+        inset 50px 0 300px #FCC8CB;
+    }
+  }
+
+  .main--game{
+    
+    .game--board{
+     display: flex;
+    }
+    .grid {
+        width: 202px;
+        height: 402px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        justify-content: initial;
+        margin-top: 0;
+        background-color:rgba(255, 255, 255, 0.2) ;
+        div{
+          height: 20px;
+          width: 20px;
+          margin-top: 0;  
+          justify-content: initial;
+        }
+      }
+    
+      .game--screen{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin: 0;
+          margin-left: 20px;
+          .score{
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255, 0.2) ;
+            height: 80px;
+            margin-top: 20px;
+            display: flex;
+            p span, p{
+                font-size: 1.5rem;
+            }
+
+          }
+          .stop{
+              height: 100%;
+              margin: 0;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+              button{
+                  width: 100%;
+              }
+          }
+          a{
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-top: 2px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+          }
+      }
+
+      .tetris{
+          border: solid 1px white;
+          border-radius: 5px;
+          background: rgba(255, 255, 255, 0.4);
+      }
+
+      .mini--grid{
+          width: 82px;
+          height: 82px;
+          border-radius: 10px;
+          flex-wrap: wrap;
+          display: flex;
+          justify-content: initial;
+          margin-top: 0;
+          background-color:rgba(255, 255, 255, 0.2) ;
+          div{
+              width: 20px;
+              height: 20px;
+              margin-top: 0;
+          }
+      }
 
 
+  }
+  
+
+  
+  
